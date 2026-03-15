@@ -1,0 +1,50 @@
+#
+# Normal rules
+#
+.*
+*.o
+*.o.*
+*.a
+*.s
+*.ko
+*.so
+*.mod.c
+*.cmd
+.tmp_*
+.tmp_kallsyms*
+.tmp_vmlinux*
+.tmp_System.map
+
+#
+# Core built files
+#
+vmlinux
+vmlinux.o
+System.map
+Module.symvers
+modules.builtin
+modules.order
+
+#
+# Compressed files
+#
+*.gz
+*.bz2
+*.lzma
+*.xz
+*.lz4
+*.lzo
+
+#
+# Backup files
+#
+*.bak
+*~
+*.swp
+
+#
+# Exclude git objects
+#
+!.gitignore
+!.gitmodules
+!.mailmap
