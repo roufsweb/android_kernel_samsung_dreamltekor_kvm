@@ -31,7 +31,7 @@ echo ""
 
 echo "******************************"
 echo "Make Config..."
-make exynos8895-dreamlte_defconfig
+make exynos8895-dreamltekor_defconfig
 make menuconfig
 echo "Make Config Complete!!"
 echo "******************************"
@@ -43,7 +43,7 @@ echo "******************************"
 echo "Kernel Build Start..."
 echo "Build timer start!!"
 STARTTIME=$(date +"%s")
-make -j4
+make -j23
 echo "Kernel Build Complete!!"
 f_timer $STARTTIME
 echo "******************************"
